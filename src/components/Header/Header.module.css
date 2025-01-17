@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#97cadb;
+    color: #fff;
+}
+
+.header_dark{
+    background-color: #001b48;
+}
+
+.leftContainer {
+    display: flex;
+    align-items: center;
+}
+
+.rightContainer {
+    display: flex;
+    align-items: center;
+}
+
+.rightContainer > * {
+    margin-left: 20px;
+}
+
+.icon {
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.createMovieButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.createMovieButton:hover {
+    transform: scale(1.1);
+    color: #f39c12;
+}
+
+.createMovieButton .icon {
+    font-size: 1.5rem;
+}

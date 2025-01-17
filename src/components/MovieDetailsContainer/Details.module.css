@@ -1,0 +1,136 @@
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detailsContainer_dark {
+    background-color: #5483b3;
+}
+
+@media (min-width: 768px) {
+    .detailsContainer {
+        flex-direction: row;
+    }
+}
+
+.posterContainer {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .posterContainer {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
+
+.posterImage {
+    width: 100%;
+    max-width: 270px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detailsContent {
+    flex: 2;
+}
+
+.detailsTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.overview {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.additionalDetails {
+    font-size: 14px;
+}
+
+.additionalDetails p {
+    margin-bottom: 5px;
+}
+
+.additionalDetails strong {
+    font-weight: bold;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating span {
+    color: #f39c12;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.genre, .company {
+    background-color: #e1ecf4;
+    color: #0366d6;
+    border-radius: 3px;
+    padding: 2px 6px;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.favoriteButton,
+.updateButton,
+.deleteButton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 5px 0;
+}
+
+.detailsContainer .favoriteButton {
+    background-color: #f5f5f5;
+    color: gray;
+}
+
+.detailsContainer .updateButton {
+    background-color: #3498db;
+    color: white;
+}
+
+.detailsContainer .deleteButton {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.detailsContainer_dark .favoriteButton {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.detailsContainer_dark .updateButton {
+    background-color: #2980b9;
+    color: white;
+}
+
+.detailsContainer_dark .deleteButton {
+    background-color: #c0392b;
+    color: white;
+}
+
+.favoriteButton:hover,
+.updateButton:hover,
+.deleteButton:hover {
+    filter: brightness(85%);
+}

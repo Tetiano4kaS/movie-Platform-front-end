@@ -1,0 +1,138 @@
+.moviesContainer {
+    padding: 1rem;
+}
+
+.moviesRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.movieCard {
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.movieCard_dark {
+    color: white;
+}
+
+.movieCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.movieTitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.moviePoster {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+
+.movieRating {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.starIcon {
+    margin-right: 0.2rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.topRatedContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.topRatedContainer_dark {
+    background-color: #001b48;
+}
+
+.titleTopRated {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.titleTopRated_dark {
+    color: whitesmoke;
+}
+
+.moviesGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.topRatedCard {
+    width: 150px;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.topRatedCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.posterTopRated {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.topRatedTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+.filterContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filterContainer label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filterContainer select {
+    padding: 5px;
+    font-size: 16px;
+}

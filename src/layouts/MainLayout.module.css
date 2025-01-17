@@ -1,0 +1,9 @@
+.container {
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #d6e8ee;
+    width: auto;
+}
+
+.container_dark {
+    background-color: #021024;
+}
